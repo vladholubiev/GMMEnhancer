@@ -1,0 +1,134 @@
+{
+	"ac_button": {
+		"message": "Утвердить"
+	},
+	"appdescr": {
+		"message": "Упрощает жизнь картографа"
+	},
+	"eventPage_intros": {
+		"message": "На утверждение: <br>_Утвердите,пожалуйста:<br>_У меня одного все правки требуют утверждения?<br>_Утвердите, пожалуйста, кое-что:<br>_Прошу утвердить:<br>_Вот висит несколько хвостов у меня<br>_Просьба утвердить:<br>_Для рецензий, спасибо!<br>"
+	},
+	"fl_change": {
+		"message": "Изменить"
+	},
+	"fl_gotHeightSrc": {
+		"message": "Правильно ли определена высота? Если нет - можете поменять."
+	},
+	"fl_gotLevels": {
+		"message": "Введите этажи для которых будут созданы кнопки. Например: 1, 2, 3, 5, 9, 12"
+	},
+	"options_h1": {
+		"message": "Удаление элементов интерфейса"
+	},
+	"options_h1_functions": {
+		"message": "Функционал расширения"
+	},
+	"options_saved": {
+		"message": "Настройки сохранены"
+	},
+	"options_toggle_off": {
+		"message": "Выключить"
+	},
+	"popup_descr0": {
+		"message": "Открывает новую вкладку с указанной картой текущей местности"
+	},
+	"popup_descr1": {
+		"message": "Вставляет фрагмент карты слева сбоку для удобного копирования"
+	},
+	"popup_discover": {
+		"message": "Познакомиться с функционалом расширения"
+	},
+	"popup_insertBM": {
+		"message": "Вставить карту Bing"
+	},
+	"popup_insertOSM": {
+		"message": "Вставить OSM"
+	},
+	"popup_insertVC": {
+		"message": "Вставить карту Visicom"
+	},
+	"popup_insertWM": {
+		"message": "Вставить Wikimapia"
+	},
+	"popup_insertYM": {
+		"message": "Вставить Яндекс.Карты"
+	},
+	"popup_insertBM": {
+		"message": "Вставить карты Bing"
+	},
+	"popup_inserted_unavailable": {
+		"message": "ВНИМАНИЕ! Эта карта работает только через <b>http</b> соединения, но у вас https. Если вы хотите использовать эти карты - открывайте Мапмейкер по этой ссылке: http://google.com/mapmaker"
+	},
+	"popup_openinmaps": {
+		"message": "Посмотреть на Картах Google"
+	},
+	"popup_openinmapsYandex": {
+		"message": "Посмотреть на Картах Яндекс"
+	},
+	"popup_openinmapsBing": {
+		"message": "Посмотреть на Картах Bing"
+	},
+	"popup_openinmapsMeta": {
+		"message": "Посмотреть на Картах Мета"
+	},
+	"popup_settings": {
+		"message": "Настройки расширения"
+	},
+	"popup_report": {
+		"message": "Предложение/проблема"
+	},
+	"rz_addNew_click_prompt": {
+		"message": "Введите имя шаблона:"
+	},
+	"rz_addNew_click_prompt_if": {
+		"message": "Введите текст шаблона: "
+	},
+	"rz_addNew_click_prompt_if_if": {
+		"message": "Введите ссылку на иконку:"
+	},
+	"rz_bMain_name": {
+		"message": "Шаблоны"
+	},
+	"rz_ban_descr": {
+		"message": "Введите текст нового шаблона, он сохранится на Вашем компьютере."
+	},
+	"rz_ban_name": {
+		"message": "Новый шаблон"
+	},
+	"rz_code_src_deleteText": {
+		"message": "Удалить"
+	},
+	"rz_sett_backup_descr": {
+		"message": "Может понадобиться во время копирования шаблонов на другой компьютер"
+	},
+	"rz_sett_backup_name": {
+		"message": "Резервная копия шаблона"
+	},
+	"sl_block_name": {
+		"message": "Короткие ссылки на неутвержденный изменения:"
+	},
+	"sl_button_name": {
+		"message": "Короткие ссылки"
+	},
+	"sl_button_pastelinks": {
+		"message": "Опубликовать в сообществе"
+	},
+	"statBar_editsPerDay": {
+		"message": "правок за день"
+	},
+	"statBar_days": {
+		"message": "Дней в MapMaker"
+	},
+	"statBar_reviews": {
+		"message": "Рецензий"
+	},
+	"statBar_editsLetter": {
+		"message": "п."
+	},
+	"statBar_dayLetter": {
+		"message": "д."
+	},
+	"statBar_reviewsLetter": {
+		"message": "р."
+	}
+}

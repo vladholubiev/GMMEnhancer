@@ -1,0 +1,49 @@
+International extension for optimization Google Map Maker
+
+● Automatic collection of short links to your unapproved changes
+● Automatic insert height of the building by pressing the corresponding number of storeys with pressing the "Save". You can put your own templates
+● You can insert to a page fragment of external maps: OpenStreetMap, Bing, Wikimapia, Yandex.Maps and Visikom!
+● You can easily view current map on Google, Yandex and Meta Maps
+● Easy template-management of reviews. One click to insert frequently used phrases.
+● Displaying your statistic on every page
+● Enter - saves changes, Spacebar - Switch from satellite photos on the card or vice versa
+● Remove unnecessary interface elements
+● Viewing the displayed area in Google and Yandex Maps (click on the application icon )
+● Block with number of your edits is painted depending on how much change is left to the nearest round number
+● And a lot of other cool features...
+
+FEATURE THAT INSERTS EXTERNAL MAPS ON A PAGE IS PROVIDED AS IS AND ONLY FOR EDUCATIONAL PUPRPOSES. THE AUTHOR ASSUMES NO RESPONSIBILITY FOR THE ACTIONS PERFORMED BY THE USER WHEN USING THIS FEATURE.
+---------------------------
+Интернациональное приложение для оптимизации Google Map Maker
+
+● Автоматический сбор коротких ссылок на ваши неутвержденные изменения и возможность их автоматической публикаций в сообществе картографов
+● Автоматическое выставление высоты здания нажатием соответствующей кнопки этажности вместе с нажатием кнопки «Сохранить». Можно ставить свои шаблоны
+● Возможность вставить на страницу фрагмент карты OpenStreetMap, Bing, Wikimapia, Яндекс.Карт и карт Визиком!
+● Возможность посмотреть текущий фрагмент карты на Google, Yandex и Meta картах
+● Удобное управление шаблонами для рецензий. Одним кликом вставляйте часто используемые фразы.
+● Отображение вашой статистики на каждой странице
+● Enter - Сохраняет изменение , Пробел - Переключение с спутниковое фото на карту и наоборот
+● Удаленное лишних элементов интерфейса
+● Просмотр отображаемой области в Google и Яндекс Картах (клик по иконке приложения)
+● Блок с количеством ваших изменений закрашивается в зависимости от того сколько изменений осталось до ближайшего круглого числа
+● И много-много другого...
+
+ФУНКЦИЯ ВСТАВКИ СТОРОННИХ КАРТ ПРЕДОСТАВЛЯЕТСЯ ИСКЛЮЧИТЕЛЬНО ДЛЯ ОЗНАКОМЛЕНИЯ. АВТОР НЕ НЕСЕТ НИКАКОЙ ОТВЕТСТВЕННОСТИ ЗА ДЕЙСТВИЯ СОВЕРШЕННЫЕ ПОЛЬЗОВАТЕЛЕМ ПРИ ИСПОЛЬЗОВАНИИ ЭТОЙ ФУНКЦИИ.
+---------------------------
+Інтернаціональний додаток для оптимізації Google Map Maker
+
+● автоматичний збір коротких посилань на ваші незатверджені зміни і можливість їх автоматичної публікацій у спільноті
+● автоматичне виставляння висоти будівлі натисканням відповідної кнопки кількості поверхів разом з натисканням кнопки «Зберегти». Можна ставити свої шаблони
+● Можливість вставити на сторінку фрагмент карти OpenStreetMap, Bing, Wikimapia, Яндекс.Карт та Візіком!
+● Одним кліком можна переглянути поточний фрагмент в картах Google, Yandex та Meta
+● Відображення вашої статистики на кожній сторінці
+● зручне управління шаблонами для рецензій. Одним кліком вставляйте часто використовувані фрази.
+● автосхвалення чужих змін натисканням одної кнопки
+● Enter - Зберігає зміну, Пробіл - Перемикає з супутникове фото на мапу і навпаки
+● розширене довідкове меню з посиланнями на статті ММПедії
+● видаленя зайвих елементів інтерфейсу
+● Перегляд відображуваної області в Google та Яндекс Картах (клік по іконці додатку)
+● Блок із кількістю ваших змін зафарбовується в залежності від того скільки змін залишилося до найближчого круглого числа
+● І багато-багато іншого....
+
+ФУНКЦІЯ ВСТАВКИ СТОРОННІХ КАРТ НАДАЄТЬСЯ ВИКЛЮЧНО ДЛЯ ОЗНАЙОМЛЕННЯ. АВТОР НЕ НЕСЕ НІЯКОЇ ВІДПОВІДАЛЬНОСТІ ЗА ДІЇ ВЧИНЕНІ КОРИСТУВАЧЕМ ПІД ЧАС ВИКОРИСТАННЯ ЦІЄЇ ФУНКЦІЇ.

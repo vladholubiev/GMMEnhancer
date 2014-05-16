@@ -1,0 +1,129 @@
+{
+	"ac_button": {
+		"message": "Approve"
+	},
+	"appdescr": {
+		"message": "Simplifies life of cartographer"
+	},
+	"eventPage_intros": {
+		"description": "",
+		"message": "Need accept: <br>_Accept, please something:<br>_Here are some of my unaccepted changes<br>_For reviews, thanks!<br>"
+	},
+	"fl_change": {
+		"message": "Change"
+	},
+	"fl_gotHeightSrc": {
+		"message": "Is height defined correctly? If no, feel free to change it right here."
+	},
+	"fl_gotLevels": {
+		"message": "Enter floors for template creating. F.e.: 1, 2, 3, 5, 9, 12"
+	},
+	"options_h1": {
+		"message": "Cleaning up of interface"
+	},
+	"options_h1_functions": {
+		"message": "Extension features"
+	},
+	"options_saved": {
+		"message": "Settings saved"
+	},
+	"options_toggle_off": {
+		"message": "Turn off"
+	},
+	"popup_descr0": {
+		"message": "Opens a new tab with the selected map of current area"
+	},
+	"popup_descr1": {
+		"message": "Inserts fragment of a map on the left side for easy copying"
+	},
+	"popup_discover": {
+		"message": "Discover app features"
+	},
+	"popup_insertOSM": {
+		"message": "Insert OSM"
+	},
+	"popup_insertVC": {
+		"message": "Insert Visicom map"
+	},
+	"popup_insertWM": {
+		"message": "Insert Wikimapia"
+	},
+	"popup_insertYM": {
+		"message": "Insert Yandex.Maps"
+	},
+	"popup_insertBM": {
+		"message": "Insert Bing Maps"
+	},
+	"popup_inserted_unavailable": {
+		"message": "WARNING! This map works only through <b>http</b> connection, while you have https. If you want to use these maps - open Mapmaker using this link: http://google.com/mapmaker"
+	},
+	"popup_openinmaps": {
+		"message": "View on Google Maps"
+	},
+	"popup_openinmapsYandex": {
+		"message": "View on Yandex Maps"
+	},
+	"popup_openinmapsBing": {
+		"message": "View on Bing Maps"
+	},
+	"popup_openinmapsMeta": {
+		"message": "View on Meta Maps"
+	},
+	"popup_settings": {
+		"message": "Extension Settings"
+	},
+	"popup_report": {
+		"message": "Ask a feature/reporp an issue"
+	},
+	"rz_addNew_click_prompt": {
+		"message": "Введіть ім’я шаблону:"
+	},
+	"rz_addNew_click_prompt_if": {
+		"message": "Enter template name: "
+	},
+	"rz_addNew_click_prompt_if_if": {
+		"message": "Enter link to icon:"
+	},
+	"rz_bMain_name": {
+		"message": "Templates"
+	},
+	"rz_ban_descr": {
+		"message": "Enter text of new template. It will be saved in your browser"
+	},
+	"rz_ban_name": {
+		"message": "New template"
+	},
+	"rz_code_src_deleteText": {
+		"message": "Delete"
+	},
+	"rz_sett_backup_descr": {
+		"message": "It can be useful in case of moving to another computer. Save this string and paste in localStorage when it will be needed"
+	},
+	"rz_sett_backup_name": {
+		"message": "Backup templates"
+	},
+	"sl_block_name": {
+		"message": "Short links for unapproved edits:"
+	},
+	"sl_button_name": {
+		"message": "Short links"
+	},
+	"statBar_editsPerDay": {
+		"message": "edits per day"
+	},
+	"statBar_days": {
+		"message": "Days in MapMaker"
+	},
+	"statBar_reviews": {
+		"message": "Reviews"
+	},
+	"statBar_editsLetter": {
+		"message": "e."
+	},
+	"statBar_dayLetter": {
+		"message": "d."
+	},
+	"statBar_reviewsLetter": {
+		"message": "r."
+	}
+}

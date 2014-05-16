@@ -1,0 +1,58 @@
+{
+	"background": {
+		"scripts": [
+			"js/eventPage.js",
+			"js/icon.js"
+		],
+		"persistent": false
+	},
+	"content_scripts": [{
+		"css": [
+			"css/gmmHelpMenu.css",
+			"css/rez-gmm.css"
+		],
+		"js": [
+			"js/jquery-latest.js",
+			"js/gmm/DOMinserter.js",
+			"js/gmm/hotkey enter.js",
+			"js/gmm/hotkey space.js",
+			"js/gmm/open in gm.js"
+		],
+		"matches": [
+			"*://*/mapmaker*"
+		],
+		"run_at": "document_end"
+	}],
+	"converted_from_user_script": true,
+	"description": "__MSG_appdescr__",
+	"icons": {
+		"96": "icons/newicon128.png"
+	},
+	"homepage_url": "http://testapi.eu5.org/chrome/",
+	"default_locale": "uk",
+	"page_action": {
+		"default_title": "Google Map Maker Enhancer",
+		"default_icon": "icons/icon48.png",
+		"default_popup": "popup.html"
+	},
+	"options_page": "options.html",
+	"manifest_version": 2,
+	"name": "GMM Enhancer",
+	"short_name": "GMM+",
+	"permissions": [
+		"*://*/mapmaker*",
+		"https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU",
+		"tabs",
+		"storage",
+		"notifications"
+	],
+	"version": "1.3.4",
+	"web_accessible_resources": [
+		"js/*.js",
+		"js/gmm/*.js",
+		"js/insertedMaps/*.js",
+		"css/*.css",
+		"icons/*.*",
+		"img/*.*"
+	]
+}

@@ -1,0 +1,85 @@
+.level {
+		margin-top: 10px;
+		margin-left: -15px;
+		z-index: 999;
+}
+#level_wrapper {
+	margin-left: 30px;
+}
+.t_list {
+		background-color: #FFF;
+		border-radius: 2px;
+		margin-left: 220px;
+		display: none;
+		margin-top: -4px;
+		border-bottom: 5px solid #ECECEC;
+		-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+		-moz-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.t_list:last-child {
+		border-bottom: 1px solid #ECECEC;
+}
+.t_list:hover {
+		background-color: #ececec;
+}
+.t_butt {
+		margin-right: 3px !important;
+}
+.addNew > div.goog-menuitem-content div.kd-toolbar-menuitem-img {
+		background: no-repeat url(http://testapi.eu5.org/gmm/img/Add-New-32.png);
+		background-size: 32px;
+		width: 32px;
+		height: 32px;
+		margin: 6px 2px 0px -15px;
+}
+.t_list .kd-toolbar-menuitem-img {
+		margin: 1px 2px 0px -15px;
+}
+.t_list > .goog-menuitem-content > .kd-toolbar-menuitem-img {
+		background-size: 32px;
+		width: 32px;
+		height: 32px;
+}
+.kd-toolbar-menuitem-desc {
+		overflow: hidden;
+}
+.delete {
+		width: 16px;
+		height: 16px;
+		margin-top: -10px;
+}
+.copypaste img {
+		margin-top: -20px;
+		padding-bottom: 5px;
+}
+.copypaste {
+		margin-left: 320px;
+		margin-right: -80px;
+}
+@media (max-width: 1300px) {
+	#kd-add-toolbar-menubutton, #kd-edit-toolbar-menubutton, #kd-browse-toolbar-button {
+		padding: 0px;
+		margin: 0px;
+	}
+	#kd-edit-toolbar-menubutton.t_butt:hover + #kd-toolbar {
+		margin-top: -57px;
+	}
+}
+#menu {
+	margin-right: -100px;
+}
+.addNew {
+	margin-top: -4px !important;
+}
+#closeMapButton span {
+	position: relative;
+	top: 20px;
+	left: 100px;
+	background-color: #d14836;
+	padding: 5px 8px;
+	border-radius: 2px;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}

@@ -1,0 +1,139 @@
+{
+	"appdescr": {
+		"message": "Спрощує життя пересічного картографа"
+	},
+
+	"ac_button": {
+		"message": "Затвердити"
+	},
+
+	"eventPage_intros": {
+		"message": "На затвердження: <br>_Затвердіть, будь ласка:<br>_У мене одного всі зміни йдуть на затвердження?<br>_Затвердіть, будь ласка, дещо:<br>_Прошу затвердити<br>_Висять у мене хвости<br>_Прохання схвалити:<br>_Для рецензування, дякую!<br>"
+	},
+
+
+	"fl_change": {
+		"message": "Змінити"
+	},
+	"fl_gotLevels": {
+		"message": "Введіть через кому поверхи для яких буде додано шаблон. Наприклад: 1, 2, 3, 5, 9, 12"
+	},
+	"fl_gotHeightSrc": {
+		"message": "Висота визначена правильно? Якщо ні, змініть"
+	},
+
+
+	"rz_code_src_deleteText": {
+		"message": "Видалити"
+	},
+	"rz_ban_name": {
+		"message": "Новий шаблон"
+	},
+	"rz_ban_descr": {
+		"message": "Введіть текст нового шаблону. Він збережеться на вашому комп’ютері."
+	},
+	"rz_bMain_name": {
+		"message": "Шаблони"
+	},
+	"rz_sett_backup_name": {
+		"message": "Резервна копія шаблонів"
+	},
+	"rz_sett_backup_descr": {
+		"message": "Може знадобитися при пересенні шаблонів на інший комп’ютер. Скопіюйте символи з поля нижче та збережіть"
+	},
+	"rz_addNew_click_prompt": {
+		"message": "Введіть ім’я шаблону:"
+	},
+	"rz_addNew_click_prompt_if": {
+		"message": "Введіть текст шаблону: "
+	},
+	"rz_addNew_click_prompt_if_if": {
+		"message": "Введіть посилання на іконку:"
+	},
+
+
+	"sl_button_name": {
+		"message": "Короткі посилання"
+	},
+	"sl_block_name": {
+		"message": "Короткі посилання на незатверджені зміни:"
+	},
+
+	"options_saved": {
+		"message": "Налаштування збережені"
+	},
+	"options_h1": {
+		"message": "Видалення елементів інтерфейсу"
+	},
+	"options_h1_functions": {
+		"message": "Функціонал розширення"
+	},
+	"options_toggle_off": {
+		"message": "Вимкнути"
+	},
+
+
+	"popup_settings": {
+		"message": "Налаштування додатку"
+	},
+	"popup_discover": {
+		"message": "Ознайомитися з фунціями додатку"
+	},
+	"popup_openinmaps": {
+		"message": "Подивитися на Картах Google"
+	},
+	"popup_openinmapsYandex": {
+		"message": "Подивитися на Картах Яндекс"
+	},
+	"popup_openinmapsBing": {
+		"message": "Подивитися на Картах Bing"
+	},
+	"popup_openinmapsMeta": {
+		"message": "Подивитися на Картах Мета"
+	},
+	"popup_insertOSM": {
+		"message": "Вставити OSM"
+	},
+	"popup_insertWM": {
+		"message": "Вставити Wikimapia"
+	},
+	"popup_insertYM": {
+		"message": "Вставити Яндекс.Карти"
+	},
+	"popup_insertVC": {
+		"message": "Вставити карту Visicom"
+	},
+	"popup_insertBM": {
+		"message": "Вставить карти Bing"
+	},
+	"popup_descr0": {
+		"message": "Відкриває нову вкладку з вказаною картою поточної місцевості"
+	},
+	"popup_descr1": {
+		"message": "Вставляє фрагмент карти зліва збоку для зручного копіювання"
+	},
+	"popup_inserted_unavailable": {
+		"message": "УВАГА! Ця карта працює лише через <b>http</b> з’єднання, натомість у вас https. Якщо ви хочете використовувати ці карти - відкривайте Мапмейкер за цим посиланням: http://google.com/mapmaker"
+	},
+	"popup_report": {
+		"message": "Проблема/прохання/ідея"
+	},
+	"statBar_editsPerDay": {
+		"message": "правок на день"
+	},
+	"statBar_days": {
+		"message": "Днів у Мапмейкері"
+	},
+	"statBar_reviews": {
+		"message": "Рецензій"
+	},
+	"statBar_editsLetter": {
+		"message": "п."
+	},
+	"statBar_dayLetter": {
+		"message": "д."
+	},
+	"statBar_reviewsLetter": {
+		"message": "р."
+	}
+}

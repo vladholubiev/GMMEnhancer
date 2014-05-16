@@ -1,0 +1,147 @@
+﻿#menu {
+	list-style:none;
+right: 150px;
+position: absolute;
+margin-left: 200px;
+top: -2px;
+}
+
+#menu li {
+	
+}
+
+#menu li:hover {
+	
+}
+
+
+
+#menu li a {
+	/*font-family:Arial, Helvetica, sans-serif;*/
+	color: #03C;
+	text-decoration:none;
+	cursor: pointer;
+font-size: 12px;
+font-weight: bold;
+line-height: 18px;
+
+}
+
+#menu li a:hover {
+	color:#F90;
+	text-shadow: 1px 1px 1px #ffffff;
+}
+
+
+
+.dropdown_1, 
+.dropdown_2, 
+.dropdown_3, 
+.dropdown_4,
+.dropdown_5 {
+	margin:4px auto;
+	float:left;
+	position:absolute;
+	left:-999em; /* Hides the drop down */
+	text-align:left;
+	padding:5px 2px 5px 2px;
+	border: 1px solid gainsboro;
+	background:#F4F4F4;
+	/* Rounded Corners */
+	-moz-border-radius: 5px 0px 5px 5px;
+	-webkit-border-radius: 5px 0px 5px 5px;
+	border-radius: 5px 0px 5px 5px;
+        min-height: 355px;
+width: 270px;
+}
+
+
+#menu li:hover .dropdown_1,
+#menu li:hover .dropdown_2, 
+#menu li:hover .dropdown_3,
+#menu li:hover .dropdown_4,
+#menu li:hover .dropdown_5{
+left: -150px;
+margin-top: 0px;
+z-index: 99;
+position: absolute;
+}
+
+
+
+
+#menu li ul {
+list-style: none;
+top: 25px;
+margin: 0;
+position: absolute;
+left: -10px;
+width=250px;
+}
+
+#menu li ul li{
+position: relative;
+text-align: left;
+font-size: 11px;
+padding: 1px;
+margin: 0px;
+float: none;
+}
+
+
+#menu li ul li:hover {
+padding: 0;
+border: 1px solid  #FFC466;
+border-radius: 5px 0px 0px 5px;
+border-right: none;
+margin: 0;
+width=250px;
+}
+
+.info0,
+.info1, 
+.info2, 
+.info3, 
+.info4, 
+.info5, 
+.info6,
+.info7, 
+.info8, 
+.info9 {
+width:263px;
+position:absolute;
+display:none;
+padding:3px;
+background:#F4F4F4;
+min-height:100px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	border:1px solid  #FFC466;
+
+}
+
+.info8 {
+width:350px;
+min-height:400px;
+}
+
+#menu li ul li:hover .info1, 
+#menu li ul li:hover .info2,
+#menu li ul li:hover .info3,
+#menu li ul li:hover .info4,
+#menu li ul li:hover .info5,
+#menu li ul li:hover .info6,
+#menu li ul li:hover .info7,
+#menu li ul li:hover .info8,
+#menu li ul li:hover .info9 {
+display:block; 
+left:100px;
+z-index:99;
+position:absolute;
+top:10px;
+}
+#menu li ul li:hover .info8 {
+left:-358px;
+width:350px;
+top:-182px}
