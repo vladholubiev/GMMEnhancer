@@ -1,8 +1,8 @@
 GMM Enhancer
 ===========
-![](http://i.imgur.com/2vtRHR1.png)
+[![](https://developer.chrome.com/webstore/images/ChromeWebStore_Badge_v2_340x96.png)
+![](http://pastexen.com/i/XmObT2IKZA.png)](https://chrome.google.com/webstore/detail/gmm-enhancer/apmfackigpphgbbanjkjcafbiciialnm)
 
-Check it on [Chrome Web Store](https://chrome.google.com/webstore/detail/gmm-enhancer/apmfackigpphgbbanjkjcafbiciialnm).
 
 Chrome extension for optimization Google Map Maker
 ---------------------------------------------------------
