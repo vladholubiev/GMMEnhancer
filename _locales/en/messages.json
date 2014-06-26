@@ -3,11 +3,11 @@
 		"message": "Approve"
 	},
 	"appdescr": {
-		"message": "Simplifies life of cartographer"
+		"message": "Improve your MapMaker experience!"
 	},
 	"eventPage_intros": {
 		"description": "",
-		"message": "Need accept: <br>_Accept, please something:<br>_Here are some of my unaccepted changes<br>_For reviews, thanks!<br>"
+		"message": "Need approval: <br>_Accept, please:<br>_Here are some of my unaccepted changes<br>_For reviews, thanks!<br>"
 	},
 	"fl_change": {
 		"message": "Change"
@@ -73,10 +73,10 @@
 		"message": "Extension Settings"
 	},
 	"popup_report": {
-		"message": "Ask a feature/reporp an issue"
+		"message": "Ask a feature/report an issue"
 	},
 	"rz_addNew_click_prompt": {
-		"message": "Введіть ім’я шаблону:"
+		"message": "Enter template name:"
 	},
 	"rz_addNew_click_prompt_if": {
 		"message": "Enter template name: "
