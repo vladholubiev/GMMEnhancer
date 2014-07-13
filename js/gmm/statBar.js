@@ -4,12 +4,6 @@ $.get(userLink, function(data) {
 	var draftStat = $(data).find('.time_period_large').text().match(/\d+/g);
 	var days = draftStat[0];
 	var edits = draftStat[1];
-	/* Це відсилає повідомлення eventPage який буде малювати іконку в адресному рядку
-	chrome.runtime.sendMessage({
-		type: 'edits',
-		edits: edits
-	});
-	*/
 	var reviews = draftStat[3];
 	var editsPerDay = (edits / days).toPrecision(2);
 

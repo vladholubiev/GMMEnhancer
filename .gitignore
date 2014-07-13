@@ -1,1 +1,8 @@
+.idea/
+doc/
+libs/*/src/
+META-INF/
+out/
+
+*.iml
 thumbs.db

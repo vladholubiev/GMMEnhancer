@@ -9,7 +9,7 @@ function closeButtonInsert() {
 			$('#lp-panel-headers').find('div[id*=ap]').remove();
 			$('#closeMapButton').remove();
 		});
-	}
+	};
 	if ($('img[src*="tiny_marker-k.png"]:visible').length < 1) {
 		$('#closeMapButton').remove();
 		$('#gw-tab-header').after('<div id="closeMapButton"><span>X</span></div>');
@@ -30,13 +30,13 @@ function getLatLon(callback) {
 	});
 }
 
-function insertMap() {};
+function insertMap() {}
 insertMap.WM = function() {
 	closeButtonInsert();
 	if ($('#WMMmap').length < 1) {
 		$('#lp-panel-headers').prepend('<div id="WMMmap"><iframe src="http://wikimapia.org/#lat=' + lat + '&lon=' + lon + '&z=' + zoomgot + '&l=&ifr=1&m=w" width="' + width + '" height="' + height + '" frameborder="0"></iframe></div>');
 	}
-}
+};
 
 insertMap.OSM = function() {
 	$('#lp-panel-headers').prepend('<div id="OSMmap"></div>');
@@ -51,14 +51,14 @@ insertMap.OSM = function() {
 
 	map.addLayer(mapnik);
 	map.setCenter(position, zoomgot);
-}
+};
 
 insertMap.VC = function() {
 	closeButtonInsert();
 	if ($('#VCMap').length < 1) {
 		$('#lp-panel-headers').prepend('<div id="VCMap"><iframe src="http://maps.visicom.ua/c/' + lon + ',' + lat + ',' + zoomgot + '?lang=' + lang + '" width="' + width + '" height="' + height + '" frameborder="0"></iframe></div>');
 	}
-}
+};
 
 insertMap.YM = function() {
 	closeButtonInsert();
@@ -74,7 +74,7 @@ insertMap.YM = function() {
 		});
 		myMap.controls.add('typeSelector').add('smallZoomControl');
 	}
-}
+};
 
 insertMap.BM = function() {
 	closeButtonInsert();
@@ -84,7 +84,7 @@ insertMap.BM = function() {
 	if ($('#NMMap').length < 1) {
 		$('#lp-panel-headers').prepend('<div id="bingmaps"><iframe src="http://www.bing.com/maps/embed/viewer.aspx?v=3&cp=' + lat + '~' + lon + '&lvl=' + zoomgot + '&sty=h&typ=d&pp=&ps=&dir=0&mkt=en-us&src=SHELL&form=BMEMJS&w=' + width + '&h=' + height + '" width="' + width + '" height="' + height + '" frameborder="0"></iframe></div>');
 	}
-}
+};
 insertMap.MM = function() {
 	closeButtonInsert();
 	$('#lp-panel-headers').prepend('<div id="metamaps"></div>');
@@ -99,4 +99,4 @@ insertMap.MM = function() {
 			]
 		});
 	}
-}
+};

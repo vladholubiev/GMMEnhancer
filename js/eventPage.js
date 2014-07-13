@@ -1,13 +1,12 @@
 var isPageSafe, pageurl, edits;
 
-//Оновлення додатку та встановлення перший раз
 chrome.runtime.onInstalled.addListener(function(details) {
 	if (details.reason == "install") {
 		console.log("This is a first install!");
 	} else if (details.reason == "update") {
 		var thisVersion = chrome.runtime.getManifest().version;
 		console.log("Updated from " + details.previousVersion + " to " + thisVersion + "!");
-		/*По замовчуванню вмикати опцію*/
+		//Enable sending stats by default
 		chrome.storage.local.set({
 			contestSender: true
 		});
@@ -78,14 +77,14 @@ function runMapLoader(which) {
 	}
 } //MapLoader
 
-//value - айді змінної, data треба щоб мати доступ до змінних
+//value - variable id, data is needed to access variable
 function check(value, data) {
-	//Загальний обробник
+	//General handler
 	if (value !== 'contestSender') {
 		//if value exists
 		if (data[value] !== undefined) {
 			if (data[value] === false) { //and is false
-				//so user wants to execute script
+				//user wants to execute script
 				chrome.tabs.executeScript({
 					file: 'js/gmm/' + value + '.js'
 				});
@@ -148,15 +147,6 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo) {
 							chrome.storage.local.get('replytemplates', function(data) {
 								check('replytemplates', data);
 							});
-							//Що виконувати при кожному завантаженні сторінки
-							//-----------------------------------------------
-							chrome.tabs.executeScript({
-								file: 'js/gmm/gradientStat.js'
-							}, function() {
-								chrome.tabs.executeScript({
-									code: "setBg();"
-								})
-							});
 							chrome.tabs.executeScript({
 								file: "js/gmm/messagebox.js"
 							});
@@ -166,22 +156,18 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo) {
 							chrome.tabs.executeScript({
 								file: "js/gmm/ui hide.js"
 							});
+							//Don't mark nearby objects with red
 							chrome.tabs.executeScript({
-								file: "js/gmm/autoconfirm.js"
+								code: "$(document).ready(function() {if ($('#level_wrapper').length > 0)" +
+                                    "{setTimeout(function() {$('.jfk-checkbox-checkmark').eq(0).click()}, 300);}});"
 							});
-							//Не виділяє навкошилні об’єкти червоним
-							chrome.tabs.executeScript({
-								code: "$(document).ready(function() { if ($('#level_wrapper').length > 0) { setTimeout(function() {$('.jfk-checkbox-checkmark').eq(0).click() }, 300); } });"
-							});
-							//Виділяє повідомлення що правка має бути переглянути помаранчевим
+							//Marks a message that edit has to be reviewed by an Indian guy
 							chrome.tabs.executeScript({
 								file: 'js/gmm/indusColor.js'
 							});
-							//-----------------------------------------------
-							//Що виконувати при кожному завантаженні сторінки
 						});
 					}
-					//Для автоматичної вставки посилань в спільноту
+					//Sending links to community
 					if (url.indexOf('?pastelinks=true') > -1) {
 						chrome.tabs.executeScript({
 							file: 'js/jquery-latest.js'
@@ -197,7 +183,7 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo) {
 				chrome.tabs.insertCSS({
 					file: 'css/someCSS.css'
 				});
-				//Забирає повідомлення про Shift
+				//Remove Shift message
 				chrome.storage.local.get('noShift', function(data) {
 					if (data['noShift'] === true) {
 						chrome.tabs.insertCSS({
@@ -219,59 +205,9 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo) {
 						chrome.tabs.executeScript({
 							file: 'js/gmm/userfinder.js'
 						});
-					}) //end of chrome.tabs.executeScript
+					}); //end of chrome.tabs.executeScript
 				} //end of if tab.url
 			}); //end of chrome.tabs.get
 		}
 	}); //end of chrome.storage.local.get
 }); //end of tabs.onUpdated
-//BadgeText on PageAction
-/*
-chrome.tabs.onUpdated.addListener(function(tabId, changeInfo) {
-	if (changeInfo.status == "complete") {
-		chrome.tabs.get(tabId, function(tab) {
-
-			window.setInterval(function() {
-				setPageActionIcon(tab);
-			}, 1000);
-
-			function setPageActionIcon(tab) {
-				var canvas = document.createElement('canvas');
-				var img = document.createElement('img');
-				img.onload = function() {
-
-					// Draw the background image
-					var context = canvas.getContext('2d');
-					context.drawImage(img, 0, 2);
-
-					// Draw the "badge" 
-					var grd = context.createLinearGradient(0, 10, 0, 19);
-					grd.addColorStop(0, 'rgb(255, 100, 100)');
-					grd.addColorStop(1, 'rgb(150,  50,  50)');
-
-					context.fillStyle = grd;
-					context.fillRect(0, 9, 19, 10);
-
-					context.strokeStyle = 'rgb(255, 255, 255)';
-					context.strokeRect(0, 10, 1, 1);
-					context.strokeRect(0, 19, 1, 1);
-					context.strokeRect(19, 10, 1, 1);
-					context.strokeRect(19, 19, 1, 1);
-
-					// Draw some text 
-					context.fillStyle = "white";
-					context.font = "bold 10px Sans-Serif";
-					context.fillText(edits, 2, 17, 17);
-
-					chrome.pageAction.setIcon({
-						imageData: context.getImageData(0, 0, 19, 19),
-						tabId: tab.id
-					});
-				};
-				img.src = "icon16.png";
-			}
-
-		});
-	}
-});
-*/

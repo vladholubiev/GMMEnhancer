@@ -7,9 +7,8 @@
 	border-radius: 10px;
 	text-shadow: rgba(255, 255, 255, 0.51) 1px 1px 1px;
 	color: rgb(51, 51, 51);
-	background-color: rgb(221, 221, 221);
-	background-image: radial-gradient(rgba(207, 207, 207, 0), #f1f1f1);
-	border-bottom-color: rgb(204, 204, 204);
+    background: rgb(221, 221, 221) radial-gradient(rgba(207, 207, 207, 0), #f1f1f1);
+    border-bottom-color: rgb(204, 204, 204);
 	cursor: pointer;
 }
 .letter {

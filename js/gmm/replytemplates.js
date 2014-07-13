@@ -2,7 +2,7 @@
 	if (window.hasRunreply) return;
 	window.hasRunreply = true;
 	//t - templates
-	var t = {}, code = {}, count = 0; //count- кілкість створених шаблонів - скільки разів на addNew натиснули
+	var t, code = {}, count = 0; //number of templates = nuber of clicks
 	t = {
 		0: {
 			name: '',
@@ -40,21 +40,20 @@
 		}
 	};
 
-	//Refactor, ugly code
 	function makeCode(n) {
-		//Шаблон меню
+		//Menu template
 		if (typeof n == 'number') {
 			var temp = {
 				0: '<div id="kd-edit-directions" style="margin-top:-4px;" class="t_list goog-menuitem"><div class="goog-menuitem-content"><div class="kd-toolbar-menuitem-img" style="background-size:32px 32px;background: no-repeat url(',
 				1: ');"><img src="http://www.google.com.ua/mapmaker/mapfiles/transparent.png"></div><div class="text-head goog-inline-block"><div class="icon kd-toolbar-menuitem-title">',
 				2: '</div><div class="descr kd-toolbar-menuitem-desc">',
 				3: '</div></div><div class="copypaste"><img src="http://testapi.eu5.org/gmm/img/Arrowhead-Right-32.png" title="Вставити і надіслати"><img src="http://testapi.eu5.org/gmm/img/Recycle-Bin-32.png" title="' + chrome.i18n.getMessage("rz_code_src_delete") + '" class="delete"></div></div></div>'
-			}
+			};
 			console.log(temp);
 			t[n].code = temp[0] + t[n].icon + temp[1] + t[n].name + temp[2] + t[n].descr + temp[3];
 			return t[n].code;
 		}
-		//Кнопка додавання нового шаблону
+		//Add new template button
 		return {
 			ban: function(a) {
 				code[a].code = code[a].src[0] + code[a].name + code[a].src[1] + code[a].descr + code[a].src[2];
@@ -87,7 +86,7 @@
 	function mouseEvents() {
 		$('.t_butt, .t_list').mouseenter(function() {
 			$('.t_list').show();
-			//Ефект натискання кнопки
+			//Button press effect
 			$('.t_butt').addClass('goog-flat-menu-button-open');
 			if ($(window).width() < 1300) $('#kd-toolbar').attr('style', 'margin: 0px 0px 0px -57px;');
 		});
@@ -98,7 +97,6 @@
 		});
 	}
 
-	//TODO: rewrite using foreach
 	function listEvenets() {
 		for (var i = 0; i < 20; i++) {
 			(function(i) {
@@ -128,7 +126,7 @@
 		} else {
 			if (localStorage['t']) {
 				t = JSON.parse(localStorage['t']);
-				tlength = Object.keys(t).length; //Кількість шаблонів
+				tlength = Object.keys(t).length; //templates length
 				count += tlength;
 				for (var i = 0; i < tlength; i++) {
 					appendItem(makeCode(i));
@@ -146,15 +144,12 @@
 			replies = {
 				replies: replies
 			};
-			chrome.storage.local.set(replies, function() {
-				//chrome.storage.local.get(null, function(all) {console.log(all)});
-			});
 		}
 	}
 	if ($('.t_butt').length < 1) {
 		var code = code.bMain.code + makeCode('ban').ban('ban');
 		$('#kd-toolbar>#kd-browse-toolbar-button').after(code);
-		//Видаляє чомусь зайві вставлені елементи
+		//Delete odd inserted elements
 		$('.t_butt').first().remove();
 		$('.addNew').first().remove();
 	}

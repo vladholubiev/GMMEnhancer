@@ -31,10 +31,10 @@
 		background-size: 32px;
 		width: 32px;
 		height: 32px;
-		margin: 6px 2px 0px -15px;
+		margin: 6px 2px 0 -15px;
 }
 .t_list .kd-toolbar-menuitem-img {
-		margin: 1px 2px 0px -15px;
+		margin: 1px 2px 0 -15px;
 }
 .t_list > .goog-menuitem-content > .kd-toolbar-menuitem-img {
 		background-size: 32px;
@@ -59,8 +59,8 @@
 }
 @media (max-width: 1300px) {
 	#kd-add-toolbar-menubutton, #kd-edit-toolbar-menubutton, #kd-browse-toolbar-button {
-		padding: 0px;
-		margin: 0px;
+		padding: 0;
+		margin: 0;
 	}
 	#kd-edit-toolbar-menubutton.t_butt:hover + #kd-toolbar {
 		margin-top: -57px;
