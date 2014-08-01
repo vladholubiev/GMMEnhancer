@@ -7,7 +7,6 @@ $(document).ready(function () {
         padding: '9px 9px 9px 44px',
         width: ($('#panel').width() - 44 - 9) + 'px'
     });
-    $('#lp-control-panel').remove();
     $('#div-mini-dashboard').show();
     $('#spsizer').css({height: '100%'});
 });
