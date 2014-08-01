@@ -107,23 +107,5 @@
 	},
 	"sl_button_name": {
 		"message": "Short links"
-	},
-	"statBar_editsPerDay": {
-		"message": "edits per day"
-	},
-	"statBar_days": {
-		"message": "Days in MapMaker"
-	},
-	"statBar_reviews": {
-		"message": "Reviews"
-	},
-	"statBar_editsLetter": {
-		"message": "e."
-	},
-	"statBar_dayLetter": {
-		"message": "d."
-	},
-	"statBar_reviewsLetter": {
-		"message": "r."
 	}
 }

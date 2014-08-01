@@ -117,23 +117,5 @@
 	},
 	"popup_report": {
 		"message": "Проблема/прохання/ідея"
-	},
-	"statBar_editsPerDay": {
-		"message": "правок на день"
-	},
-	"statBar_days": {
-		"message": "Днів у Мапмейкері"
-	},
-	"statBar_reviews": {
-		"message": "Рецензій"
-	},
-	"statBar_editsLetter": {
-		"message": "п."
-	},
-	"statBar_dayLetter": {
-		"message": "д."
-	},
-	"statBar_reviewsLetter": {
-		"message": "р."
 	}
 }

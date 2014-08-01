@@ -112,23 +112,5 @@
 	},
 	"sl_button_pastelinks": {
 		"message": "Опубликовать в сообществе"
-	},
-	"statBar_editsPerDay": {
-		"message": "правок за день"
-	},
-	"statBar_days": {
-		"message": "Дней в MapMaker"
-	},
-	"statBar_reviews": {
-		"message": "Рецензий"
-	},
-	"statBar_editsLetter": {
-		"message": "п."
-	},
-	"statBar_dayLetter": {
-		"message": "д."
-	},
-	"statBar_reviewsLetter": {
-		"message": "р."
 	}
 }
