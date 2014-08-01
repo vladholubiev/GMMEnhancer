@@ -34,7 +34,7 @@
 		"message": "Opens a new tab with the selected map of current area"
 	},
 	"popup_descr1": {
-		"message": "Inserts fragment of a map on the left side for easy copying"
+		"message": "Replace existing map with selected"
 	},
 	"popup_discover": {
 		"message": "Discover app features"

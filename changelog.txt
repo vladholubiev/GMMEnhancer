@@ -1,3 +1,11 @@
+v. 1.5
+---------
+Release Date: 13 July 2014
+
+    ● Other maps are inserted over the Map Makers
+	● Replaced own stats bar implementation with googles hidden one
+	● Completely removed sending competitions info
+
 v. 1.4
 ---------
 Release Date: 13 July 2014
