@@ -1,6 +1,12 @@
+v. 1.5.1
+---------
+Release Date: 02 August 2014
+
+    ● Spacebar to toggle between MapMaker and inserted map
+
 v. 1.5
 ---------
-Release Date: 13 July 2014
+Release Date: 31 July 2014
 
     ● Other maps are inserted over the Map Makers
 	● Replaced own stats bar implementation with googles hidden one

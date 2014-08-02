@@ -4,6 +4,12 @@ var elToPrep = $('#mapv3').find('.gm-style:eq(0)'),
     lang = window.navigator.userLanguage || window.navigator.language,
     myMap, lat, lon, zoomgot;
 
+jQuery.fn.visibilityToggle = function () {
+    return this.css('visibility', function (i, visibility) {
+        return (visibility == 'visible') ? 'hidden' : 'visible';
+    });
+};
+
 function closeButtonInsert() {
     closeButtonInsert.listener = function () {
         $('#closeMapButton').click(function () {
@@ -12,6 +18,10 @@ function closeButtonInsert() {
             showOddElements();
         });
     };
+
+    bindSpacebar();
+    elToPrep.children().eq(0).addClass('mainLayer');
+
     if ($('img[src*="tiny_marker-k.png"]:visible').length < 1) {
         $('#closeMapButton').remove();
         $('#gw-tab-header').after('<div id="closeMapButton"><span>X</span></div>');
@@ -25,6 +35,16 @@ function closeButtonInsert() {
     }
 }
 
+function bindSpacebar() {
+    $(document).keypress(function (event) {
+        if (event.which == 32) {
+            event.preventDefault();
+            $('.insertedMap').toggle();
+            $('.mainLayer').visibilityToggle();
+        }
+    });
+}
+
 function getLatLon(callback) {
     chrome.storage.local.get(null, function (data) {
         lat = data.coords.match(/\d+.\d+/g)[0];
@@ -35,30 +55,31 @@ function getLatLon(callback) {
 }
 
 function hideOddElements() {
-    $('#mapv3').find('.gm-style:eq(0)').find('.gmnoprint[controlwidth]').hide();
+    elToPrep.find('.gmnoprint[controlwidth]').hide();
     $('div[cad="src:dragzoom"]').hide();
-    $('#mapv3').find('.gm-style:eq(0)').children().first().css({visibility: 'hidden'});
+    elToPrep.children().first().css({visibility: 'hidden'});
 }
 
 function showOddElements() {
-    $('#mapv3').find('.gm-style:eq(0)').find('.gmnoprint[controlwidth]').show();
+    elToPrep.find('.gmnoprint[controlwidth]').show();
     $('div[cad="src:dragzoom"]').show();
-    $('#mapv3').find('.gm-style:eq(0)').children().first().css({visibility: 'visible'});
+    elToPrep.children().first().css({visibility: 'visible'});
 }
 
 function insertMap() {
 }
 insertMap.WM = function () {
     closeButtonInsert();
-
     if ($('#WMMmap').length < 1) {
-        elToPrep.prepend('<div id="WMMmap"><iframe src="http://wikimapia.org/#lat=' + lat + '&lon=' + lon + '&z=' + zoomgot + '&l=&ifr=1&m=w" width="' + width + '" height="' + height + '" frameborder="0"></iframe></div>');
+        getLatLon();
+        elToPrep.prepend('<div id="WMMmap" class="insertedMap"><iframe src="http://wikimapia.org/#lat=' + lat + '&lon=' + lon + '&z=' + zoomgot + '&l=&ifr=1&m=w" width="' + width + '" height="' + height + '" frameborder="0"></iframe></div>');
     }
 };
 
 insertMap.OSM = function () {
     closeButtonInsert();
-    elToPrep.prepend('<div id="OSMmap"></div>');
+    getLatLon();
+    elToPrep.prepend('<div id="OSMmap" class="insertedMap"></div>');
     $('#OSMmap').attr('style', 'position: absolute; width: ' + width + 'px; height: 100%; z-index: 100;');
 
     var map = new OpenLayers.Map("OSMmap");
@@ -74,13 +95,15 @@ insertMap.OSM = function () {
 insertMap.VC = function () {
     closeButtonInsert();
     if ($('#VCMap').length < 1) {
-        elToPrep.prepend('<div id="VCMap"><iframe src="http://maps.visicom.ua/c/' + lon + ',' + lat + ',' + zoomgot + '?lang=' + lang + '" width="' + width + '" height="' + height + '" frameborder="0"></iframe></div>');
+        getLatLon();
+        elToPrep.prepend('<div id="VCMap" class="insertedMap"><iframe src="http://maps.visicom.ua/c/' + lon + ',' + lat + ',' + zoomgot + '?lang=' + lang + '" width="' + width + '" height="' + height + '" frameborder="0"></iframe></div>');
     }
 };
 
 insertMap.YM = function () {
     closeButtonInsert();
-    elToPrep.prepend('<div id="ymapsbox"></div>');
+    getLatLon();
+    elToPrep.prepend('<div id="ymapsbox" class="insertedMap"></div>');
     $('#ymapsbox').attr('style', 'position: absolute; width: ' + width + 'px; height: 100%; z-index: 100;');
     ymaps.ready(init);
 
@@ -96,8 +119,9 @@ insertMap.YM = function () {
 
 insertMap.BM = function () {
     closeButtonInsert();
+    getLatLon();
 
-    elToPrep.prepend('<div id="bingmaps"></div>');
+    elToPrep.prepend('<div id="bingmaps" class="insertedMap"></div>');
     $('#bingmaps').attr('style', 'position: absolute; width: 512px; height: 100%; z-index: 100;');
     if ($('#NMMap').length < 1) {
         elToPrep.prepend('<div id="bingmaps"><iframe src="http://www.bing.com/maps/embed/viewer.aspx?v=3&cp=' + lat + '~' + lon + '&lvl=' + zoomgot + '&sty=h&typ=d&pp=&ps=&dir=0&mkt=en-us&src=SHELL&form=BMEMJS&w=' + width + '&h=' + height + '" width="' + width + '" height="' + height + '" frameborder="0"></iframe></div>');
@@ -105,7 +129,8 @@ insertMap.BM = function () {
 };
 insertMap.MM = function () {
     closeButtonInsert();
-    elToPrep.prepend('<div id="metamaps"></div>');
+    getLatLon();
+    elToPrep.prepend('<div id="metamaps" class="insertedMap"></div>');
     $('#metamaps').attr('style', 'position: absolute; width: 512px; height: 100%; z-index: 100;');
     var map = null;
 
