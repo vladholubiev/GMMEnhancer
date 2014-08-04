@@ -13,7 +13,7 @@ jQuery.fn.visibilityToggle = function () {
 function closeButtonInsert() {
     closeButtonInsert.listener = function () {
         $('#closeMapButton').click(function () {
-            elToPrep.find('div[id*=ap]').remove();
+            elToPrep.find('div[id*=ap]').not('div[id*=maptype]').remove();
             $('#closeMapButton').remove();
             showOddElements();
         });
