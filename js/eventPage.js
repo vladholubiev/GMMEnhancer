@@ -113,9 +113,6 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo) {
                     chrome.storage.local.get('helpmenu', function (data) {
                         check('helpmenu', data);
                     });
-                    chrome.tabs.executeScript({
-                        file: 'js/gmm/userfinder.js'
-                    });
                     chrome.storage.local.get(null, function (data) {
                         console.log(data);
                     });
