@@ -3,5 +3,8 @@ $(document).ready(function() {
 		setInterval(function() {
 			$("#display-message-bar").attr('style',  'background: #fc0 !important;');
 		}, 300);
+        setTimeout(function() {
+            $("#display-message-bar").remove();
+        }, 3000);
 	}
 });
