@@ -105,7 +105,7 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo) {
             if (pageurl.indexOf('mapmaker') > -1 && pageurl.indexOf('plus.google') < 0) {
                 localStorage.pageurl = pageurl;
                 chrome.tabs.executeScript({
-                    file: 'js/jquery-latest.js'
+                    file: 'js/lib/jquery-latest.js'
                 }, function () {
                     chrome.storage.local.get('floors', function (data) {
                         check('floors', data);
@@ -151,7 +151,7 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo) {
             //Sending links to community
             if (url.indexOf('?pastelinks=true') > -1) {
                 chrome.tabs.executeScript({
-                    file: 'js/jquery-latest.js'
+                    file: 'js/lib/jquery-latest.js'
                 }, function () {
                     chrome.tabs.executeScript({
                         file: 'js/gmm/shortlinksInsert.js'

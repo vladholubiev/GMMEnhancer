@@ -12,7 +12,7 @@
 			"css/rez-gmm.css"
 		],
 		"js": [
-			"js/jquery-latest.js",
+			"js/lib/jquery-latest.js",
 			"js/gmm/DOMinserter.js",
 			"js/gmm/setLocation.js"
 		],
