@@ -146,6 +146,9 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo) {
                     chrome.tabs.executeScript({
                         file: 'js/gmm/hotkeys/delete.js'
                     });
+                    chrome.tabs.executeScript({
+                        file: 'js/gmm/fixedSaveBar.js'
+                    })
                 });
             }
             //Sending links to community
