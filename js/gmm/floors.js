@@ -1,6 +1,7 @@
 (function () {
     if (window.hasRunfloors) return;
     window.hasRunfloors = true;
+
     $(document).ready(function () {
         var count = 0,
             isIns = false,
@@ -10,10 +11,11 @@
             resultHeight, template, change, changeText = chrome.i18n.getMessage("fl_change");
 
         function expand() {
+            var hightBlock = $('.block.read.hide-for-lightweight-ui').eq(0);
             setTimeout(function () {
-                $('.block.read.hide-for-lightweight-ui').eq(0).click();
+                hightBlock.click();
             }, 300);
-            $('.block.read.hide-for-lightweight-ui').eq(0).click();
+            hightBlock.click();
         }
 
         function insert(n) {
@@ -81,8 +83,10 @@
 
         function main() {
             count = 1,
-                change = '<div id="change" class="level goog-inline-block jfk-button jfk-button-standard jfk-button-collapse-left jfk-button-clear-outline">' + changeText + '</div>',
-                template = ['<div id="level', '" class="level goog-inline-block jfk-button jfk-button-standard jfk-button-narrow jfk-button-collapse-left jfk-button-clear-outline">', '</div>'];
+                change = '<div id="change" class="level goog-inline-block jfk-button jfk-button-standard ' +
+                    'jfk-button-collapse-left jfk-button-clear-outline">' + changeText + '</div>',
+                template = ['<div id="level', '" class="level goog-inline-block jfk-button jfk-button-standard ' +
+                    'jfk-button-narrow jfk-button-collapse-left jfk-button-clear-outline">', '</div>'];
             if (localStorage.levels === undefined) {
                 levels = ['1', '2', '3', '4', '5', '9', '12'].reverse();
                 gotHeight = [3, 6, 9, 12, 15, 27, 35].reverse();

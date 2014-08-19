@@ -116,8 +116,8 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo) {
                     chrome.storage.local.get(null, function (data) {
                         console.log(data);
                     });
-                    chrome.storage.local.get('noduildingdups', function (data) {
-                        check('noduildingdups', data);
+                    chrome.storage.local.get('noBuildingDuplicates', function (data) {
+                        check('noBuildingDuplicates', data);
                     });
                     chrome.storage.local.get('shortlinks', function (data) {
                         check('shortlinks', data);
@@ -126,13 +126,13 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo) {
                         check('replytemplates', data);
                     });
                     chrome.tabs.executeScript({
-                        file: "js/gmm/messagebox.js"
+                        file: "js/gmm/messageBox.js"
                     });
                     chrome.tabs.executeScript({
                         file: "js/gmm/statBar.js"
                     });
                     chrome.tabs.executeScript({
-                        file: "js/gmm/ui hide.js"
+                        file: "js/gmm/hideUI.js"
                     });
                     //Don't mark nearby objects with red
                     chrome.tabs.executeScript({
@@ -142,6 +142,9 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo) {
                     //Marks a message that edit has to be reviewed by an Indian guy
                     chrome.tabs.executeScript({
                         file: 'js/gmm/indusColor.js'
+                    });
+                    chrome.tabs.executeScript({
+                        file: 'js/gmm/hotkeys/delete.js'
                     });
                 });
             }

@@ -12,18 +12,19 @@ function check(value, data) {
 }
 
 function run() {
+    var buttonsToolbar = $('#kd-toolbar').find('#kd-browse-toolbar-button');
+    var buttonHtml = '<div id="kd-browse-toolbar-button" class="short pointer_cursor goog-inline-block hasMaxWidth ' +
+        'jfk-button jfk-button-standard kd-toolbar-last-button jfk-button-clear-outline" ' +
+        'style="max-width: 250px; !important"><div>';
+    var buttonName = chrome.i18n.getMessage("sl_button_name");
+
     chrome.storage.local.get('shortlinks', function (data) {
         if (data['shortlinks'] !== undefined) {
             if (data['shortlinks'] === false) {
-                //Short links
-                $('#kd-toolbar').find('#kd-browse-toolbar-button').after(
-                        '<div id="kd-browse-toolbar-button" class="short pointer_cursor goog-inline-block hasMaxWidth jfk-button jfk-button-standard kd-toolbar-last-button jfk-button-clear-outline" style="max-width: 250px; !important"><div>'
-                        + chrome.i18n.getMessage("sl_button_name") + '</div>');
+                buttonsToolbar.after(buttonHtml + buttonName + '</div>');
             } else return;
         } else {
-            $('#kd-toolbar').find('#kd-browse-toolbar-button').after(
-                    '<div id="kd-browse-toolbar-button" class="short pointer_cursor goog-inline-block hasMaxWidth jfk-button jfk-button-standard kd-toolbar-last-button jfk-button-clear-outline" style="max-width: 250px; !important"><div>'
-                    + chrome.i18n.getMessage("sl_button_name") + '</div>');
+            buttonsToolbar.after(buttonHtml + buttonName + '</div>');
         }
     });
 }

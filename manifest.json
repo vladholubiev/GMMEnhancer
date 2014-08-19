@@ -14,9 +14,7 @@
 		"js": [
 			"js/jquery-latest.js",
 			"js/gmm/DOMinserter.js",
-			"js/gmm/hotkey enter.js",
-			"js/gmm/hotkey space.js",
-			"js/gmm/open in gm.js"
+			"js/gmm/setLocation.js"
 		],
 		"matches": [
 			"*://*/mapmaker*"
