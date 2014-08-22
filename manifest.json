@@ -26,7 +26,7 @@
 	"icons": {
 		"96": "icons/newicon128.png"
 	},
-	"homepage_url": "http://testapi.eu5.org/chrome/",
+	"homepage_url": "https://chrome.google.com/webstore/detail/gmm-enhancer/apmfackigpphgbbanjkjcafbiciialnm",
 	"default_locale": "uk",
 	"page_action": {
 		"default_title": "Google Map Maker Enhancer",
@@ -39,16 +39,15 @@
 	"short_name": "GMM+",
 	"permissions": [
 		"*://*/mapmaker*",
-		"https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU",
+		"http://api-maps.yandex.ru/2.1/?lang=ru_RU",
 		"tabs",
 		"storage",
 		"notifications"
 	],
-	"version": "1.5.3",
+	"version": "1.5.4",
 	"web_accessible_resources": [
 		"js/*.js",
 		"js/gmm/*.js",
-		"js/insertedMaps/*.js",
 		"css/*.css",
 		"icons/*.*",
 		"img/*.*"
