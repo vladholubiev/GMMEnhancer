@@ -71,6 +71,9 @@
 	"popup_openinmapsMeta": {
 		"message": "Посмотреть на Картах Мета"
 	},
+    "popup_openinmapsHere": {
+        "message": "Посмотреть на Картах Here"
+    },
 	"popup_settings": {
 		"message": "Настройки расширения"
 	},

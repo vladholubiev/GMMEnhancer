@@ -91,6 +91,9 @@
 	"popup_openinmapsMeta": {
 		"message": "Подивитися на Картах Мета"
 	},
+    "popup_openinmapsHere": {
+        "message": "Подивитися на Картах Here"
+    },
 	"popup_insertOSM": {
 		"message": "Вставити OSM"
 	},

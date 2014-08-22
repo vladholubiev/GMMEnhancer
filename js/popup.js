@@ -32,6 +32,7 @@ $(document).ready(function() {
 	$('#openinmaps').find(aDiv).text(chrome.i18n.getMessage('popup_openinmaps'));
 	$('#openinmapsYandex').find(aDiv).text(chrome.i18n.getMessage('popup_openinmapsYandex'));
 	$('#openinmapsMeta').find(aDiv).text(chrome.i18n.getMessage('popup_openinmapsMeta'));
+	$('#openinmapsHere').find(aDiv).text(chrome.i18n.getMessage('popup_openinmapsHere'));
 	$('#insertOSM').find(aDiv).text(chrome.i18n.getMessage('popup_insertOSM'));
 	$('#insertWM').find(aDiv).text(chrome.i18n.getMessage('popup_insertWM'));
 	$('#insertYM').find(aDiv).text(chrome.i18n.getMessage('popup_insertYM'));
@@ -75,9 +76,11 @@ $(document).ready(function() {
                     'http://maps.yandex.ua/?text=' + data.coords + '&z=' + zoom);
 			$('#openinmapsMeta a').attr('href',
                     'http://map.meta.ua/#zoom=' + zoom + '&lat=' + lat + '&lon=' + lon);
+            $('#openinmapsHere a').attr('href',
+                    'http://here.com/' + lat + ',' + lon + ',' + zoom + ',0,0,normal.day');
 		});
 	}, 100);
-	$('#openinmaps, #openinmapsYandex, #openinmapsMeta').click(function() {
+	$('#openinmaps, #openinmapsYandex, #openinmapsMeta, #openinmapsHere').click(function() {
 		window.open($(this).children().attr('href'), '_blank');
 	});
 	if (window.navigator.language.indexOf('en') > -1) {

@@ -117,6 +117,9 @@ a {
 .ymaps, .ymaps:hover, .ymaps:active {
 	background-image: url(icons/ym64.png);
 }
+.hmaps, .hmaps:hover, .hmaps:active {
+    background-image: url(icons/hm64.png);
+}
 .osminsert, .osminsert:hover, .osminsert:active {
 	background-image: url(icons/osm64.png);
 }

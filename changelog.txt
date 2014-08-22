@@ -1,3 +1,17 @@
+v. 1.5.3
+---------
+Release Date: 22 August 2014
+
+    ● Added link to Here Maps from extensions menu
+
+
+v. 1.5.2
+---------
+Release Date: 19 August 2014
+
+    ● Fixed issue with unclickable add new button
+    ● Bar with save button under the list of duplicates has fixed position now
+
 v. 1.5.1
 ---------
 Release Date: 02 August 2014
