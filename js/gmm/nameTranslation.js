@@ -3,6 +3,7 @@ var nameInput,
 
 if (localStorage.declaredAddNameHandler == 0 || localStorage.declaredAddNameHandler == undefined) {
     $(document).on('click', '.cols5.cell.action-add-name a:eq(0)', function () {
+        clickCount++;
         setTimeout(function () {
             nameInput = $('input.gw-content-elem.gw-textinput-input.jfk-textinput[jstcache="0"]');
             if (clickCount < 3 && clickCount > 0) {
@@ -40,6 +41,8 @@ function translate(text, lang, element) {
         translated;
 
     $.getJSON(baseUrl).done(function (data) {
-        element.val(data.text[0]);
+        translated = data.text[0];
+        if (lang.indexOf('en') > -1) translated.split('№').join('#');
+        element.val(translated);
     });
 }

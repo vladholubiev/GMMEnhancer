@@ -44,7 +44,7 @@
 		"storage",
 		"notifications"
 	],
-	"version": "1.5.4",
+	"version": "1.5.5",
 	"web_accessible_resources": [
 		"js/*.js",
 		"js/gmm/*.js",
