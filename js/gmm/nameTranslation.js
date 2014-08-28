@@ -42,7 +42,7 @@ function translate(text, lang, element) {
 
     $.getJSON(baseUrl).done(function (data) {
         translated = data.text[0];
-        if (lang.indexOf('en') > -1) translated.split('№').join('#');
+        if (lang.indexOf('en') > -1) translated = translated.split('№').join('#');
         element.val(translated);
     });
 }
