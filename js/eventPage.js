@@ -148,7 +148,10 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo) {
                     });
                     chrome.tabs.executeScript({
                         file: 'js/gmm/fixedSaveBar.js'
-                    })
+                    });
+                    chrome.tabs.executeScript({
+                        file: 'js/gmm/nameTranslation.js'
+                    });
                 });
             }
             //Sending links to community
@@ -158,7 +161,7 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo) {
                 }, function () {
                     chrome.tabs.executeScript({
                         file: 'js/gmm/shortlinksInsert.js'
-                    })
+                    });
                 });
             }
         });
