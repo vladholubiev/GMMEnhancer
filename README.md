@@ -1,10 +1,10 @@
-GMM Enhancer
+Enhancer for Google Map Maker™
 ============
 [![](https://developer.chrome.com/webstore/images/ChromeWebStore_Badge_v2_340x96.png)
 ![](http://i.imgur.com/55HQB31.png)](https://chrome.google.com/webstore/detail/gmm-enhancer/apmfackigpphgbbanjkjcafbiciialnm)
 
 
-Improve your Google Map Maker experience!
+Improve your Google Map Maker™ experience!
 -----------------------------------------
 * Automatic __set height of the buildings__ by pressing number of the floors
 * Collect __shortened links__ to your unapproved changes in one click

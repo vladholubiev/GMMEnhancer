@@ -24,18 +24,18 @@
 	"converted_from_user_script": true,
 	"description": "__MSG_appdescr__",
 	"icons": {
-		"96": "icons/newicon128.png"
+		"96": "icons/icon128.png"
 	},
 	"homepage_url": "https://chrome.google.com/webstore/detail/gmm-enhancer/apmfackigpphgbbanjkjcafbiciialnm",
 	"default_locale": "uk",
 	"page_action": {
-		"default_title": "Google Map Maker Enhancer",
+		"default_title": "Enhancer for Google Map Maker™",
 		"default_icon": "icons/icon48.png",
 		"default_popup": "popup.html"
 	},
 	"options_page": "options.html",
 	"manifest_version": 2,
-	"name": "GMM Enhancer",
+	"name": "Enhancer for Google Map Maker™",
 	"short_name": "GMM+",
 	"permissions": [
 		"*://*/mapmaker*",
@@ -44,7 +44,7 @@
 		"storage",
 		"notifications"
 	],
-	"version": "1.5.5",
+	"version": "1.5.6",
 	"web_accessible_resources": [
 		"js/*.js",
 		"js/gmm/*.js",
