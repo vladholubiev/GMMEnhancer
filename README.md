@@ -5,7 +5,6 @@ Enhancer for Google Map Maker™
 
 ## Pimp your Google Map Maker!
 
-<<<<<<< HEAD
 Improve your Google Map Maker™ experience!
 -----------------------------------------
 * Automatic __set height of the buildings__ by pressing number of the floors
@@ -32,4 +31,3 @@ Improve your Google Map Maker™ experience!
 
 
 ###### INSERTING EXTERNAL MAPS IS PROVIDED AS IS. AUTHOR TAKES NO CARE OF USER ACTIONS PERFORMED DUE TO THIS FEATURE. Name translation is provided by [«Yandex.Translate»](http://translate.yandex.ru/)
->>>>>>> origin/master
