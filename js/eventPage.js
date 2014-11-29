@@ -10,6 +10,16 @@ function checkSafeness() {
 chrome.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
         runMapLoader(request.greeting);
+        if (request.greeting === 'startRecordPath') {
+            chrome.tabs.executeScript({
+                code: 'window.templateName = ' + request.templateName + ';'
+            });
+        }
+        if (request.greeting === 'stopRecordPath') {
+            chrome.tabs.executeScript({
+                code: '$("svg").remove();alert("removed");window.disallowDraw = true;'
+            });
+        }
         if (request.isSafe == "isSafe") {
             sendResponse({
                 text: checkSafeness()
@@ -137,7 +147,7 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo) {
                     //Don't mark nearby objects with red
                     chrome.tabs.executeScript({
                         code: "$(document).ready(function() {if ($('#level_wrapper').length > 0)" +
-                            "{setTimeout(function() {$('.jfk-checkbox-checkmark').eq(0).click()}, 300);}});"
+                        "{setTimeout(function() {$('.jfk-checkbox-checkmark').eq(0).click()}, 300);}});"
                     });
                     //Marks a message that edit has to be reviewed by an Indian guy
                     chrome.tabs.executeScript({
